@@ -8,7 +8,7 @@
 
 body {
     width: 100%;
-    background-color: cadetblue;
+    background: #f1f1f1;
 }
 
 /* header styling */
@@ -22,31 +22,63 @@ header{
 
 nav{
     height: max-content;
+    width: 100%;
     top: 0;
     padding: 10px;
-    position: static;
-    display: flex;
-    justify-content: space-evenly;
+    position: fixed;
+    gap: 20;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px;
     filter: drop-shadow(10px );
-    backdrop-filter: blur(10px);
 }
 
 /* nav logo styling */
 
-.logo img{
-    width: 20px;
-    height: 20px;
+.logo > img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 30%;
 }
 
 /* navigation list */
 
-nav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    justify-content: space-between;
+nav > ul{
+    position: absolute;
+    display: flex;
     align-items: center;
+    right: 6%;
+    gap: 30px;
+    list-style: none;
 }
+
+
+nav > ul > li{ 
+    color: #ffffff;
+}
+
+nav > ul > button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* hero section starts here */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Asset/ChatGPT\ Image\ Sep\ 19\,\ 2025\,\ 11_23_16\ PM.png);
+    background-position-y: 40%;
+    background-size: cover;
+    z-index: 0;
+}
+
