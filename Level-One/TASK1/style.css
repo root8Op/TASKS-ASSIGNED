@@ -119,12 +119,23 @@ nav > ul > button{
 
 /* hero typo menu button */
 
-.hero > button{
+.hero > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
     color: #ffffff;
+    font-weight: 300;
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
     height: 40px;
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
+}
+
+.hero > a:hover{
+    background-color: #ffffff;
+    color: black;
 }
