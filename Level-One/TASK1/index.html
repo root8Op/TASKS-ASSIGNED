@@ -14,9 +14,9 @@
 
         <!-- navigation bar starts here -->
          
-        <nav>
+        <nav class="navbar">
             <!-- Brand Logo -->
-            <div class="logo"><img src="./Asset/ChatGPT Image Sep 19, 2025, 11_39_36 PM.png" alt=""></div>
+            <div class="logo"><img id="logo" src="./Asset/ChatGPT Image Sep 19, 2025, 11_39_36 PM.png" alt=""></div>
             
             <!-- Nav items -->
             <ul>
@@ -25,7 +25,7 @@
                 <a href="#Offers"><li id="navlist">Offers</li> </a>
                 <a href="#About"><li id="navlist">About</li> </a>
                 <a href="Contact"><li id="navlist">Contact</li> </a>
-                <Button class="CTA">Order Now</Button>
+                <Button class="CTA btn">Order Now</Button>
             </ul>
             <!-- Nav items ends here -->
         </nav>
@@ -73,7 +73,7 @@
                     and a side of filter coffee in a steel tumbler</li><br>
                 <li>Aromatic, Authentic, and Absolutely Satisfying</li>
             </ul>
-            <h2>Get 10% Off On Sunday <br> <u>Order Now</u></h2>
+            <h2>Free Delivery + 10% Off <br> <u>Order Now</u></h2>
 
             <img src="./Asset/Copilot_20250921_133043.png" alt="North Thali">
         </div>
@@ -129,16 +129,30 @@
     <!-- Offer section blur settings -->
     <script>
         // scroll function for navbar
-        window.addEventListener('scroll', function () {
-        const offers = document.getElementById('offers');
+        function checkNavbarBlur() {
         const navbar = document.querySelector('.navbar');
-        const offersTop = offers.getBoundingClientRect().top;
-        if (offersTop <= window.innerHeight && offersTop >= 0) {
-          navbar.classList.add('blur');
+        const thaliSection = document.querySelector('#Offers');
+        const logo = document.getElementById('logo');
+
+        if (!navbar || !thaliSection || !logo) return;
+
+        const thaliTop = thaliSection.getBoundingClientRect().top;
+
+        if (thaliTop <= 0) {
+          navbar.classList.add('blur-navbar');
+          logo.src = './Asset/ChatGPT Image Sep 21, 2025, 04_52_16 PM.png';
         } else {
-          navbar.classList.remove('blur');
+          navbar.classList.remove('blur-navbar');
+          logo.src = './Asset/ChatGPT Image Sep 19, 2025, 11_39_36 PM.png';
         }
-        });
+    }
+
+    // Run on scroll
+    window.addEventListener('scroll', checkNavbarBlur);
+
+    // Run on page load
+    window.addEventListener('load', checkNavbarBlur);
+
     </script>
 </body>
 </html>

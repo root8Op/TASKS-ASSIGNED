@@ -11,6 +11,12 @@ body {
     background: #f1f1f1;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
 /* header styling */
 
 header{
@@ -37,9 +43,24 @@ nav{
     z-index: 1;
 }
 
-.navbar.blur {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.6);
+.blur-navbar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+.blur-navbar a,
+.blur-navbar .nav-link,
+.blur-navbar .navbar-text{
+  color: black;
+}
+.blur-navbar .btn {
+  color: black;
+  border: 1px solid black;
+}
+.blur-navbar #navbar-logo {
+  height: 40px;
+  transition: all 0.3s ease;
 }
 
 /* nav logo styling */
@@ -245,3 +266,5 @@ nav > ul > button{
     left: 16%;
     top: 26rem;
 }
+
+/* Offer section styling ends here */
