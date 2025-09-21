@@ -264,7 +264,40 @@ nav > ul > button{
     font-style: italic;
     text-align: center;
     left: 16%;
-    top: 26rem;
+    top: 24rem;
 }
 
 /* Offer section styling ends here */
+
+
+/* Menu section styling starts here */
+
+.Menu{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #29190c; */
+    background-color: #29190c;
+    top: 120rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    z-index: 1;
+}
+
+/* Menu container styling */
+
+.Menu-container{
+    width: 90%;
+    height: 40rem;
+    background-color: #f1f1f1;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0px 0.1px 0.8px black;
+    display: grid;
+    grid-template-columns: ;
+}
+
+/* Menu card styling */
+
