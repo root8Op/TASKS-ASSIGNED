@@ -34,6 +34,7 @@ nav{
     background-color: transparent;
     border-bottom: 1px;
     filter: drop-shadow(10px );
+    z-index: 1;
 }
 
 .navbar.blur {
@@ -115,7 +116,6 @@ nav > ul > button{
     color: wheat;
     font-weight: 900;
     padding: 5px;
-    text-decoration: underline;
     font-style: italic;
     font-size: large;
     text-shadow: 0px 0px 2px black;
@@ -155,7 +155,7 @@ nav > ul > button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    z-index: 1;
 }
 
 /* Combo cards */
@@ -163,10 +163,12 @@ nav > ul > button{
 .offercard{
     width: 90%;
     height: 500px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    box-shadow: 0px 0.1px 0.8px black;
     border: 1px;
     border-radius: 20px;
 
@@ -181,8 +183,65 @@ nav > ul > button{
 
 .offercard > ul{
     position: absolute;
-    right: 8%;
-    top: 43rem;
-    font-size: large;
+    right: 14%;
+    top: 5rem;
+    font-size: larger;
+    text-transform: capitalize;
+    font-weight: 400;
+}
 
+/* Offer Heading */
+
+.offercard > h2{
+    position: absolute;
+    color: #ffd700;
+    text-shadow: 0.8px 0.8px 0px black;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    right: 22%;
+    top: 24rem;
+}
+
+/* Second Card styling */
+
+.offercard2{
+    width: 90%;
+    height: 500px;
+    top: 75rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0.1px 0.8px black;
+    border: 1px;
+    border-radius: 20px;
+}
+
+.offercard2 > img{
+    width: 22rem;
+    height: 28rem;
+    position: absolute;
+    right: 8%;
+}
+
+.offercard2 > ul{
+    position: absolute;
+    left: 14%;
+    top: 5rem;
+    font-size: larger;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.offercard2 > h2{
+    position: absolute;
+    color: #ffd700;
+    text-shadow: 0.8px 0.8px 0px black;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    left: 16%;
+    top: 26rem;
 }
