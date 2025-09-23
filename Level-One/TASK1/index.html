@@ -200,18 +200,14 @@
 
     <!-- Contact section starts here -->
     <section class="Contact" id="contact">
-        <!-- <p>Contact form (name, email, message).
-        Address, phone number, and Google Maps embed.
-        Social media icons (Instagram, Facebook, etc.).</p> -->
-        <!-- Contact Form -->
         <div class="contact-form">
             <h2>Always Here, Always Listening</h2>
             <p>Questions, feedback, or a midnight craving? <br>
                 Reach out and we'll get back faster than a samosa disappears!</p>
-            <form class="form">
-                <input type="text" placeholder="Your Name" class="" required>
-                <input type="email" placeholder="Your Email" class="" required>
-                <textarea placeholder="Your Message" rows="5" class="" required></textarea>
+            <form class="form" action="https://formspree.io/f/xzzjbgbo" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email"name="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" name="message" required></textarea>
                 <button type="submit" class="">Send Message</button>
             </form>
         </div>
@@ -220,12 +216,12 @@
 
     <!-- footer starts here -->
     <footer>
-        
+        <p> © <span id="current-year"></span> <strong>CraveX</strong> .All rights are reserved</p>
         <div class="Information">
-                <p>📞 <strong>Phone:</strong> +91 81262 60753</p>
+                <p>📞 <strong>Phone:</strong> +9181XXXXXXXX</p>
                 <p>📍 <strong>Location:</strong> Nakur, Uttar Pradesh</p>
-                <p>💬 <strong>WhatsApp:</strong><a href="https://api.whatsapp.com/send/?phone=918126260753" target="_blank">Chat Now</a></p>
-            </div>
+                <p>💬 <strong>WhatsApp:</strong><a href="https://api.whatsapp.com/send/?phone=918126260753" target="_blank"> Chat Now</a></p>
+        </div>
         </footer>
     <!-- footer ends here -->
 

@@ -506,7 +506,7 @@ nav > ul > a > button{
     top: 22.1%;
     right: 8%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     border-radius: 20px;
     box-shadow: 0px 0px 1px black;
 }
@@ -545,7 +545,6 @@ nav > ul > a > button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #29190c;
 }
 
 /* Contact form and other styling */
@@ -600,6 +599,8 @@ nav > ul > a > button{
     padding: 10px;
     margin: 10px;
     box-shadow: 0px 0px 1px black;
+    resize: none;
+    overflow-y: auto;
 }
 
 .form > button { 
@@ -617,3 +618,37 @@ nav > ul > a > button{
 /* Contact section ends here  */
 
 /* footer styling starts here */
+
+footer{
+    position: relative;
+    background-color: #29190c;
+    bottom: 0;
+    width: 100%;
+    height: max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 70rem;
+}
+
+footer > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+footer > div > p{
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+.Information > p > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.Information > p > a:hover{
+    color: #000000;
+}
+
+/* footer styling ends here  */
