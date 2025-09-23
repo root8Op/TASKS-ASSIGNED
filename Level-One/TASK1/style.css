@@ -354,20 +354,114 @@ nav > ul > a > button{
     align-items: center;
 }
 
+/* card one styling */
+
 .delivery{
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+    background-color: #29190c;
+    box-shadow: 0px 0.2px 0.6px wheat;
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
 }
 
-.ingredients{
-    background-color: black;
-    width: 100px;
-    height: 100px;
+.delivery > img{
+    width: 80px;
+    height: 60px;
+    position: relative;
+    top: -10%;
 }
+
+.delivery > h3{
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+}
+
+.delivery > p{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 40px;
+}
+
+/* card two styling */
+.ingredients{
+    background-color: #29190c;
+    box-shadow: 0px 0.2px 0.6px wheat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+}
+.ingredients > img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -8%;
+}
+
+.ingredients > h3{
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+}
+
+.ingredients > p{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 40px;
+}
+
+/* card three styling */
 
 .support{
-    background-color: brown;
-    width: 100px;
-    height: 100px;
+    background-color: #29190c;
+    box-shadow: 0px 0.2px 0.6px wheat;
+    border-radius: 0px 20px 20px 0px ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+}
+
+.support > img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -10%;
+}
+
+.support > h3{
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+}
+
+
+.support > p{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    top: 40px;
 }
