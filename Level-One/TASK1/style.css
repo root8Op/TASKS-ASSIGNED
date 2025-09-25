@@ -65,7 +65,7 @@ nav{
 
 /* nav logo styling */
 
-.logo > img{
+.logo > a > img{
     width: 80px;
     height: 80px;
     position: relative;
