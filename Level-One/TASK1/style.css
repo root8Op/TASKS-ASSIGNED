@@ -83,6 +83,10 @@ nav > ul{
     list-style: none;
 }
 
+nav > ul > img{
+  height: 20px;
+  opacity: 0%;
+}
 
 nav > ul > li{ 
     color: #ffffff;
@@ -503,7 +507,7 @@ nav > ul > a > button{
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    top: 22.1%;
+    top: 20.1%;
     right: 8%;
     position: absolute;
     z-index: 0;
@@ -651,4 +655,194 @@ footer > div > p{
     color: #000000;
 }
 
-/* footer styling ends here  */
+/* --- Responsive Styles --- */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .Menu-container {
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+  }
+  .Choose-Us {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .delivery, .ingredients, .support {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .offercard, .offercard2 {
+    flex-direction: column;
+    height: auto;
+    position: static;
+    width: 95vw;
+    margin-bottom: 40px;
+  }
+  .offercard > img, .offercard2 > img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .offercard > ul, .offercard2 > ul {
+    position: static;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .offercard > h2, .offercard2 > h2 {
+    position: static;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .call-action {
+    flex-direction: column;
+    height: auto;
+  }
+  .call-action > img {
+    width: 90vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .Order {
+    position: static;
+    width: 90vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* For mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  nav {
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+  }
+  nav > ul {
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+    right: 0;
+    justify-content:  center;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  nav > ul > img{
+    opacity: 100%;
+    cursor: pointer;
+  }
+  nav > ul > a > li {
+    display: none;
+  }
+
+  .logo > a > img {
+    width: 50px;
+    height: 50px;
+    left: 0;
+  }
+  .hero {
+    height: 60vh;
+    padding: 10px;
+    text-align: center;
+  }
+  .hero > h1 {
+    font-size: 1.5rem;
+  }
+  .hero > h1 > span {
+    font-size: 2rem;
+  }
+  .Menu-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .menu-list {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .Choose-Us {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+  }
+  .delivery, .ingredients, .support {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .offercard, .offercard2 {
+    flex-direction: column;
+    height: auto;
+    position: static;
+    width: 95vw;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .offercard > img, .offercard2 > img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .offercard > ul, .offercard2 > ul {
+    position: static;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .offercard > h2, .offercard2 > h2 {
+    position: static;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .call-action {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .call-action > img {
+    width: 95vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .Order {
+    position: static;
+    width: 95vw;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .contact-form {
+    width: 95vw;
+    height: auto;
+    padding: 10px;
+  }
+  .form > input, .form > textarea {
+    width: 90vw;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 10px;
+    top: 0;
+  }
+  footer > div > p {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+}
