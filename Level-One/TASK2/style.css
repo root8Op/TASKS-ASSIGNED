@@ -38,10 +38,46 @@ header > h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 20rem;
-    position: absolute;
+    z-index: 1;
+    top: 15rem;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: white;
     width: 400px;
-    height: 200px;
-    background-color: rgb(193, 193, 193);
-    backdrop-filter: blur(10px);
+    height: fit-content;
+    background: #6a5acd;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 8px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* basic form styling */
+.register > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register > form > label{
+    padding: 5px;
+    align-self: flex-start;
+}
+.register > form > input{
+    padding: 2px;
+}
+
+/* submit button styling */
+.register > form > button{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px solid #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
 }

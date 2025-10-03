@@ -14,9 +14,35 @@
         <h1>Registration Form</h1>
     </header>
 
+    
+    <!-- body starts here -->
     <div class="register">
+        
+        <!-- form -->
         <form action="submit">
-            <input type="text" name="name" placeholder=" Enter Your Name">
+
+            <!-- name -->
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name" required>
+            
+            <!-- email -->
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="email" required>
+
+            <!-- phone number -->
+            <label for="tel">Phone no.</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-1234567890" pattern="^\+91-\d{10}$" required>
+            
+            <!-- password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password" required>
+
+            <!-- confirmed password -->
+            <label for="confirm password">Confirm-Password</label>
+            <input type="password" name="confirm password" required>
+
+            <!-- submit button -->
+            <button onchange="savedata()">submit</button>
         </form>
     </div>
 
