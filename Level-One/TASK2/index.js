@@ -31,6 +31,8 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 // end of the function code
 
 
+// password criteria functionality starts here
+
 document.getElementById("password").addEventListener("input", function () {
   const password = this.value;
   const message = document.getElementById("strengthMessage");
@@ -53,3 +55,5 @@ document.getElementById("password").addEventListener("input", function () {
     message.style.color = "white";
   }
 });
+
+// password criteria code ends here
