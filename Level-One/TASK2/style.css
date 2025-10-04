@@ -67,13 +67,19 @@ header > h1{
 }
 .register > form > input{
     padding: 5px;
+    border-radius: 20px;
+    border: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus {
-  border-color: #0000;
+  border-color: #4b0082;
   outline: none;
-  box-shadow: 0 0 0 1px #ffff;
+  box-shadow: 0 0 0 1px #4b0082;
+}
+
+.register > form >p{
+    align-self: flex-start;
 }
 
 /* submit button styling */

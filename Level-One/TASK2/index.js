@@ -29,3 +29,27 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 });
 
 // end of the function code
+
+
+document.getElementById("password").addEventListener("input", function () {
+  const password = this.value;
+  const message = document.getElementById("strengthMessage");
+
+  const criteria = [
+    { regex: /.{8,}/, label: "Minimum 8 characters" },
+    { regex: /[A-Z]/, label: "At least one uppercase letter" },
+    { regex: /[a-z]/, label: "At least one lowercase letter" },
+    { regex: /[0-9]/, label: "At least one number" },
+    { regex: /[^A-Za-z0-9]/, label: "At least one special character" }
+  ];
+
+  const unmet = criteria.filter(c => !c.regex.test(password));
+
+  if (unmet.length === 0) {
+    message.textContent = "✅ Strong password!";
+    message.style.color = "white";
+  } else {
+    message.innerHTML = "❌ Weak password.<br>Missing:<br>" + unmet.map(c => `• ${c.label}`).join("<br>");
+    message.style.color = "black";
+  }
+});
