@@ -39,7 +39,7 @@ header > h1{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    top: 15rem;
+    top: 10rem;
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
@@ -71,9 +71,9 @@ header > h1{
 }
 
 input:focus {
-  border-color: #0000; /* Tailwind's purple-600 */
+  border-color: #0000;
   outline: none;
-  box-shadow: 0 0 0 1px #ffff; /* Simulates ring-1 with purple-600 */
+  box-shadow: 0 0 0 1px #ffff;
 }
 
 /* submit button styling */
