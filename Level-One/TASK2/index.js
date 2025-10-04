@@ -50,6 +50,6 @@ document.getElementById("password").addEventListener("input", function () {
     message.style.color = "white";
   } else {
     message.innerHTML = "❌ Weak password.<br>Missing:<br>" + unmet.map(c => `• ${c.label}`).join("<br>");
-    message.style.color = "black";
+    message.style.color = "white";
   }
 });
